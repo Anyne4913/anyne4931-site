@@ -1,0 +1,12 @@
+09:53:00:924 [CRITICAL]	SharedConnection - Failed to open WinHTTP Session. 参数错误。
+, last error code = 87 
+09:53:00:924 [ERROR]	Failed to Configure Secure Protocols. WinHTTP Incorrect Handle Type. last error code = 12018 
+09:54:58:485 [CRITICAL]	SharedConnection - Failed to open WinHTTP Session. 参数错误。
+, last error code = 87 
+09:54:58:486 [ERROR]	Failed to Configure Secure Protocols. WinHTTP Incorrect Handle Type. last error code = 12018 
+09:55:44:359 [CRITICAL]	SharedConnection - Failed to open WinHTTP Session. 参数错误。
+, last error code = 87 
+09:55:44:359 [ERROR]	Failed to Configure Secure Protocols. WinHTTP Incorrect Handle Type. last error code = 12018 
+09:58:08:996 [CRITICAL]	SharedConnection - Failed to open WinHTTP Session. 参数错误。
+, last error code = 87 
+09:58:08:999 [ERROR]	Failed to Configure Secure Protocols. WinHTTP Incorrect Handle Type. last error code = 12018 
