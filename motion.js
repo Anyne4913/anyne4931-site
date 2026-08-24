@@ -1,8 +1,4 @@
 (() => {
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-  if (reducedMotion.matches) return;
-
   const reveal = (element) => element.classList.add("is-revealed");
 
   document.addEventListener("DOMContentLoaded", () => {

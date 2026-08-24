@@ -206,7 +206,7 @@ h1, h2, h3, strong { font-family: Montserrat, "Microsoft YaHei", "微软雅黑",
   .final-cta button:hover { translate: 0 -2px; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* Motion always plays regardless of the visitor's operating-system preference. */
   html.motion-enabled body:not(.motion-loaded) [data-hero-motion], html.motion-enabled body:not(.motion-loaded) [data-hero-product], html.motion-enabled [data-reveal]:not(.is-revealed) { will-change: opacity, translate, scale; }
   html.motion-enabled [data-hero-motion] { opacity: 0; translate: 0 18px; transition: opacity 600ms var(--motion-ease), translate 600ms var(--motion-ease); }
   html.motion-enabled [data-hero-motion]:nth-child(1) { transition-delay: 0ms; }
@@ -240,9 +240,8 @@ h1, h2, h3, strong { font-family: Montserrat, "Microsoft YaHei", "微软雅黑",
   html.motion-enabled [data-reveal="final-cta"] [data-cta-motion]:nth-child(3) { transition-delay: 80ms; }
   html.motion-enabled [data-reveal="final-cta"] > button { transition-delay: 150ms; }
   html.motion-enabled [data-reveal="final-cta"].is-revealed [data-cta-motion], html.motion-enabled [data-reveal="final-cta"].is-revealed > button { opacity: 1; translate: 0; }
-}
 
-@media (max-width: 540px) and (prefers-reduced-motion: no-preference) {
+@media (max-width: 540px) {
   html.motion-enabled [data-hero-motion] { translate: 0 12px; transition-duration: 480ms; }
   html.motion-enabled [data-hero-product] { translate: 0 12px; transition-duration: 620ms; }
   html.motion-enabled [data-reveal="heading"] { translate: 0 12px; transition-duration: 480ms; }
@@ -251,14 +250,7 @@ h1, h2, h3, strong { font-family: Montserrat, "Microsoft YaHei", "微软雅黑",
   html.motion-enabled [data-reveal="process"] li::after { display: none; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
-  .partner-marquee .partner-marquee-track, .partner-marquee[data-motion-marquee-direction="reverse"] .partner-marquee-track { animation: none; transform: none; }
-  .site-header, .site-header.is-header-hidden { translate: 0; transition: background-color 160ms linear, border-color 160ms linear; }
-}
-
-@media (min-width: 769px) and (prefers-reduced-motion: no-preference) {
+@media (min-width: 769px) {
   html.motion-enabled [data-reveal="process"] .process-icon { transition: background-color 280ms var(--motion-ease), border-color 280ms var(--motion-ease), scale 280ms var(--motion-ease); }
   html.motion-enabled [data-reveal="process"] .process-icon img { transition: filter 280ms var(--motion-ease); }
   html.motion-enabled [data-reveal="process"] li.is-active .process-icon { border-color: var(--brand-deep); background: var(--brand-deep); scale: 1; }
